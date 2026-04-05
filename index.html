@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миссия: Получить Фото</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Главный экран с диалогом -->
+    <div id="main-screen" class="screen">
+        <div class="dialog-container">
+            <div id="dialog-box">
+                <p id="dialog-text">Загрузка...</p>
+            </div>
+            <div id="button-container">
+                <button class="action-btn yes"><i class="fas fa-heart"></i> Да</button>
+                <button class="action-btn no"><i class="fas fa-camera-retro"></i> Нет</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Финальный экран (скрыт вначале) -->
+    <div id="final-screen" class="screen hidden">
+        <div class="final-content">
+            <i class="fas fa-gift fa-3x"></i>
+            <h2 id="final-title">Спасибо!</h2>
+            <p id="final-message">Ты сделала мой день! 💖</p>
+        </div>
+    </div>
+
+    <!-- Холст для фейерверка -->
+    <canvas id="fireworks-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
